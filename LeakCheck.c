@@ -20,6 +20,7 @@ void filter_list(List* l);
 void add_suffix(List* l);
 void sort_list(List* l);
 void print_to_file(List* l);
+void list_destroy(List* l);
 
 int main(void){
 
@@ -29,12 +30,13 @@ int main(void){
 		exit(1);
 	}
 
-	leaked_list* cpy = l->first;
-
 	filter_list(l);
 	add_suffix(l);
 	sort_list(l);
 	print_to_file(l);
+	list_destroy(l);
+
+	exit(0);
 }
 
 List* read_file(void){
@@ -146,4 +148,17 @@ void print_to_file(List* l){
 		fprintf(log_file, "%s\n", cpy->login);
 		cpy = cpy->next;
 	}
+	fclose(log_file);
+}
+
+void list_destroy(List* l){
+
+	leaked_list* cpy = l->first;
+	while(cpy != NULL){
+		l->first = l->first->next;
+		free(cpy->login);
+		free(cpy);
+		cpy = l->first;
+	}
+	free(l);
 }
