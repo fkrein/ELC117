@@ -23,7 +23,7 @@ writeRects w h rs = printf "<svg width='%.2f' height='%.2f' xmlns='http://www.w3
 main :: IO ()
 main = do
   let
-    hue = 360
+    hue = 240
     width = 50
     height = 20
     lines = 8
