@@ -48,4 +48,4 @@ main = do
     (w,h) = (width*columns * qtt + (qtt-1)*space, height*lines * (if qtt*qtt-qtt<quantity then qtt else qtt-1)
             + (if qtt*qtt-qtt<quantity then qtt-1 else qtt-2)*space)
     rects = calcPosit quantity qtt width height lines columns space
-  writeFile "colors.svg" (writeRects w h rects)
+  writeFile "p2.svg" (writeRects w h rects)

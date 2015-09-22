@@ -31,9 +31,9 @@ main1 :: IO ()
 main1 = do
   g <- newStdGen
   let
-    width = 5
-    lines = 90
-    columns = 190
+    width = 10
+    lines = 45
+    columns = 90
     (w,h) = (sqrt(width*width*2) * columns, sqrt(width*width*2) * lines)
     elem_list = [(line, column)| line <- [1..lines], column <- [1..columns]]
     coor_list = map (\n-> ( (sqrt(width*width*2))/2+(snd n - 1)*(sqrt(width*width*2)), 
@@ -42,7 +42,7 @@ main1 = do
     style = map (\n-> "fill:hsl(" ++ show n ++ ",100%,50%)") style_list
     zipped = zip style coor_list
     rects = map (\n-> (fst n, (snd n, width, width) ) ) zipped
-  writeFile "colors.svg" (writeRects w h rects)
+  writeFile "p3a.svg" (writeRects w h rects)
 
 main2 :: IO ()
 main2 = do
@@ -60,4 +60,4 @@ main2 = do
     dim_coor = zip dim_zip coor_zip
     zipped = zip dim_coor style_list
     rects = map (\n-> (snd n, ((fst (snd (fst n)), snd (snd (fst n))), fst (fst (fst n)), snd (fst (fst n))))) zipped
-  writeFile "colors.svg" (writeRects2 width height rects)
+  writeFile "p3b.svg" (writeRects2 width height rects)

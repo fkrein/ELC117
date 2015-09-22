@@ -30,4 +30,4 @@ main = do
     columns = 5
     (w,h) = (width * columns, height * lines)
     rects = calcRects hue width height lines columns
-  writeFile "colors.svg" (writeRects w h rects)
+  writeFile "p1.svg" (writeRects w h rects)
