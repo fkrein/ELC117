@@ -50,11 +50,10 @@ mesmaPosicao(A,[H1|_],[H2|_]) :- A = H1, H1 = H2, true.
 mesmaPosicao(A,[_|T1],[_|T2]) :- mesmaPosicao(A,T1,T2), !.
 
 intercala(_,[],[]) :- [], !.
-intercala(X,[H1|T1],[H2|T2]) :- H2 is H1, intercala_aux(X,T1,T2), !.
+intercala(X,[H1|T1],[H2|T2]) :- H2 = H1, intercala_aux(X,T1,T2), !.
 
 intercala_aux(_,[],[]).
-intercala_aux(X,[H1|T1],[H2A,H2B|T2]) :- H2A is X, H2B is H1, intercala_aux(X,T1,T2), !.
-%% Só funciona se X for um valor numérico
+intercala_aux(X,[H1|T1],[H2A,H2B|T2]) :- H2A = X, H2B = H1, intercala_aux(X,T1,T2), !.
 
 comissao(0, _, []) :- !.
 comissao(N, L, [H|T]) :- N > 0, P is N - 1, comissao_aux(H, L, Restantes), comissao(P, Restantes, T).
