@@ -22,7 +22,7 @@ recebe_nrecebe(X,Y,L) :- nth0(PosX,L,X), nth0(PosY,L,Y), ((PosX < 3, PosY >= 3);
 
 recebe_recebe(X,Y,L) :- nth0(PosX,L,X), nth0(PosY,L,Y), ((PosX < 3, PosY < 3); (PosX >= 3)).
 
-recebeTrofeu(X) :- L = [_,_,_,_,_,_,_,_],
+recebeTrofeu(X) :-
 	antes(holanda,finlandia,L),
 	antes(finlandia,espanha,L),
 	antes(guatemala,irlanda,L),
