@@ -49,12 +49,8 @@ class Circle{
 		return this.raio * 2;
 	}
 
-	public Ponto getCenter(){
-		return this.centro;
-	}
-
-	public double getDistance(Ponto centro2){
-		return this.centro.getDistance(centro2.getX(), centro2.getY());
+	public double getDistance(Circle c){
+		return this.centro.getDistance(c.centro.getX(), c.centro.getY());
 	}
 }
 
@@ -64,6 +60,6 @@ class Drive{
 		System.out.println("Circulo 1\nArea = " + c1.getArea() + "\nDiametro = " + c1.getDiameter() + "\n");
 		Circle c2 = new Circle(3,4,2);
 		System.out.println("Circulo 2\nArea = " + c2.getArea() + "\nDiametro = " + c2.getDiameter() + "\n");
-		System.out.println("Distancia entre os centros dos circulos = " + c1.getDistance(c2.getCenter()));
+		System.out.println("Distancia entre os centros dos circulos = " + c1.getDistance(c2));
 	}
 }
