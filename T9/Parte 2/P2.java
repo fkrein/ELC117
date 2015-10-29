@@ -35,7 +35,7 @@ class Estacionamento{
 	public Estacionamento(){}
 
 	public double getPrice(Veiculo v){
-		double time = v.getTime()/3600000; // pega o valor em horas - reduzir para minutos para testar
+		double time = (double) v.getTime()/ (double) 3600000; // pega o valor em horas - reduzir para minutos para testar
 		if(v.getTipo().equals("carro"))
 			return time * carro;
 		else if(v.getTipo().equals("moto"))
@@ -57,7 +57,7 @@ class Drive{
 		System.out.println("Digite 's' para cadastrar a saida do primeiro veiculo!");
 		scan.next();
 		v1.setSaida();
-		System.out.println("Valor do estacionamento para o veiculo 1 = " + e.getPrice(v1));
+		System.out.printf("Valor do estacionamento para o veiculo 1 = RS %.2f\n", e.getPrice(v1));
 
 		Veiculo v2 = new Veiculo("moto","qwe4321");
 		System.out.println("Digite 'e' para cadastrar a entrada do segundo veiculo!");
@@ -66,6 +66,6 @@ class Drive{
 		System.out.println("Digite 's' para cadastrar a saida do segundo veiculo!");
 		scan.next();
 		v2.setSaida();
-		System.out.println("Valor do estacionamento para o veiculo 2 = " + e.getPrice(v2));
+		System.out.printf("Valor do estacionamento para o veiculo 2 = RS %.2f\n", e.getPrice(v2));
 	}
 }
