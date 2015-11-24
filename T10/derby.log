@@ -1,0 +1,21 @@
+Tue Nov 24 02:22:39 BRST 2015 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Tue Nov 24 02:22:39 BRST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0151-37ba-ac19-00002d9d1dfe 
+on database directory /home/franciel/Documents/ELC117/T10/FuelStationsDB with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
+Loaded from file:/usr/local/jdk1.8.0_65/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_65-b17
+user.dir=/usr/local/jdk1.8.0_65/db
+os.name=Linux
+os.arch=amd64
+os.version=3.13.0-37-generic
+derby.system.home=/home/franciel/Documents/ELC117/T10
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 24 02:22:47 BRST 2015:
+Shutting down instance a816c00e-0151-37ba-ac19-00002d9d1dfe on database directory /home/franciel/Documents/ELC117/T10/FuelStationsDB with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
+Tue Nov 24 02:22:47 BRST 2015 Thread[DRDAConnThread_3,5,main] (DATABASE = FuelStationsDB), (DRDAID = {2}), Database 'FuelStationsDB' shutdown.
+----------------------------------------------------------------
+Tue Nov 24 02:24:48 BRST 2015: Shutting down Derby engine
+----------------------------------------------------------------
