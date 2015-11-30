@@ -6,7 +6,7 @@ public class FuelStations {
 
     public static void main(String[] args) {
         
-        Control c = new Control();
+        Control control = new Control();
         
     }
     

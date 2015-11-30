@@ -2,6 +2,7 @@ package fuelstations.controller;
 
 import fuelstations.model.Database;
 import fuelstations.view.*;
+import java.sql.Connection;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -23,12 +24,15 @@ public class Control {
             public void run() {
                 StationProperties sp = new StationProperties();
                 StationsList sl = new StationsList();
-                Database st = new Database();
+                
+                Database db = new Database();
+                Connection db_con = db.Connect();
                 
                 sp.setVisible(true);
                 sp.setLocationRelativeTo(null);
                 sl.setVisible(true);
                 sl.setLocationRelativeTo(null);
+                
             }
         });
         
