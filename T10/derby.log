@@ -1,7 +1,7 @@
-Sun Nov 29 19:12:00 BRST 2015 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+Thu Dec 03 22:59:51 BRST 2015 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Sun Nov 29 19:12:00 BRST 2015:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0151-5516-8d7f-00002d9d1dfe 
+Thu Dec 03 22:59:51 BRST 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0151-6a80-9739-00002d9d1dfe 
 on database directory /home/franciel/Documents/ELC117/T10/FuelStationsDB with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
 Loaded from file:/usr/local/jdk1.8.0_65/db/lib/derby.jar
 java.vendor=Oracle Corporation

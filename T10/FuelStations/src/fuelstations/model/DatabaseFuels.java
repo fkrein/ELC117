@@ -20,7 +20,7 @@ public class DatabaseFuels {
     private static final String UPDATE = "UPDATE FUELSTABLE SET cnpj_station = ?, tipo = ?, preco = ?, data_coleta = ? WHERE id = ?";
     private static final String DELETE = "DELETE FROM FUELSTABLE WHERE id = ?";
     private static final String SELECT = "SELECT id, cnpj_station, tipo, preco, data_coleta FROM FUELSTABLE ";
-    private static final String DELETE_STATIONS_FUELS = "DELETE FROM FUELSTABLE WHERE cnpj_station = ?";
+    private static final String DELETE_STATION_FUELS = "DELETE FROM FUELSTABLE WHERE cnpj_station = ?";
     
     public DatabaseFuels(){}
     
@@ -95,7 +95,7 @@ public class DatabaseFuels {
     public void DeleteStationFuels(Connection db_con, String cnpj){
         
         try{
-            PreparedStatement ps = db_con.prepareStatement(DELETE_STATIONS_FUELS);
+            PreparedStatement ps = db_con.prepareStatement(DELETE_STATION_FUELS);
             ps.setString(1, cnpj);
             ps.executeUpdate();
         } catch(Exception ex){

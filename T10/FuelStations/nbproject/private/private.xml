@@ -4,6 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/franciel/Documents/ELC117/T10/FuelStations/src/fuelstations/view/StationProperties.java</file>
+            <file>file:/home/franciel/Documents/ELC117/T10/FuelStations/src/fuelstations/model/DatabaseFuels.java</file>
+            <file>file:/home/franciel/Documents/ELC117/T10/FuelStations/src/fuelstations/controller/Control.java</file>
+            <file>file:/home/franciel/Documents/ELC117/T10/FuelStations/src/fuelstations/view/StationsList.java</file>
+            <file>file:/home/franciel/Documents/ELC117/T10/FuelStations/src/fuelstations/model/Database.java</file>
+            <file>file:/home/franciel/Documents/ELC117/T10/FuelStations/src/fuelstations/model/DatabaseStations.java</file>
         </group>
     </open-files>
 </project-private>
