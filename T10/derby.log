@@ -12,3 +12,9 @@ os.arch=amd64
 os.version=3.13.0-37-generic
 derby.system.home=/home/franciel/Documents/ELC117/T10
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Dec 03 23:13:35 BRST 2015: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Dec 03 23:13:35 BRST 2015:
+Shutting down instance a816c00e-0151-6a80-9739-00002d9d1dfe on database directory /home/franciel/Documents/ELC117/T10/FuelStationsDB with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
+----------------------------------------------------------------
